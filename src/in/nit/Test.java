@@ -3,7 +3,7 @@ package in.nit;
 public class Test {
 	private int sid;
 	private String sname;
-	private String college;
+	private String scollege;
 	private String location;
 	
 	public Test() {
@@ -22,17 +22,19 @@ public class Test {
 		return sname;
 	}
 
+	public String getScollege() {
+		return scollege;
+	}
+
+	public void setScollege(String scollege) {
+		this.scollege = scollege;
+	}
+
 	public void setSname(String sname) {
 		this.sname = sname;
 	}
 
-	public String getCollege() {
-		return college;
-	}
 
-	public void setCollege(String college) {
-		this.college = college;
-	}
 
 	public String getLocation() {
 		return location;
@@ -44,8 +46,11 @@ public class Test {
 
 	@Override
 	public String toString() {
-		return "Test [sid=" + sid + ", sname=" + sname + ", college=" + college + ", location=" + location + "]";
+		return "Test [sid=" + sid + ", sname=" + sname + ", scollege=" + scollege + ", location=" + location + "]";
 	}
+
+
+
 	
 	
 
